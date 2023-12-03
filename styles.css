@@ -1,7 +1,118 @@
-/* You can delete / re-write this img class  */
-
-img {
-    max-width: 200px;
+.title {
+  display: flex;
+  justify-content: center;
 }
 
-/* Happy coding! */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1rem;
+  padding: 2px 16px;
+}
+
+.card--light-side {
+  border: 2px solid black;
+  background-color: lightcyan;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--dark-side {
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--smuggler {
+  border: 2px solid black;
+  background-color: #00308f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--bounty-hunter {
+  border: 2px solid black;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+
+.card__image {
+  width: 500px;
+  padding: 1rem;
+  height: 370px;
+}
+
+.card__text {
+  color: grey;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  width: 30%;
+  margin-left: 185px;
+}
+.card__button--dark-side {
+  background-color: red;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  bottom: initial;
+}
+
+.card__button--dark-side:hover {
+  background-color: darkred;
+}
+
+.card__button--bounty-hunter {
+  background-color: #018749;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card__button--light-side {
+  background-color: white;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card__button--smuggling {
+  background-color: #6cb4ee;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card__button--smuggling:hover {
+  background-color: blue;
+}
+
+.card__button--light-side:hover {
+  background-color: grey;
+}
+
+.card__button--bounty-hunter:hover {
+  background-color: lightgreen;
+}

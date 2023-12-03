@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+  </head>
 
-<body>
-    <h1>BEM Wars</h1>
+  <body>
+    <h1 class="title">BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
-        </div>
+      <div class="card--dark-side">
+        <h2 class="card__title">The Dark Side</h2>
+        <img class="card__image" src="./images/vader.jpeg" />
+        <p class="card__text">Nesting!</p>
+        <p class="card__text">Conflict!</p>
+        <p class="card__text">Specificity Wars!</p>
+        <p class="card__text">Cookies</p>
+        <button class="card__button--dark-side">Join the dark-side</button>
+      </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
-        </div>
+      <div class="card--light-side">
+        <h2 class="card__title">The Force</h2>
+        <img class="card__image" src="./images/yoda.jpeg" />
+        <p class="card__text">Love</p>
+        <p class="card__text">Beauty</p>
+        <p class="card__text">CSS that Scales!</p>
+        <p class="card__text">Great warrior. Wars not make one great!</p>
+        <button class="card__button--light-side">Be one with the force</button>
+      </div>
+      <div class="card--smuggler">
+        <h2 class="card__title">The Smuggler</h2>
+        <img class="card__image" src="./images/hansolo.jpeg" />
+        <p class="card__text">Smuggling</p>
+        <p class="card__text">Cool</p>
+        <p class="card__text">Always stay calm</p>
+        <p class="card__text">Millennium Falcon</p>
+        <button class="card__button--smuggling">
+          See the Millennium Falcon
+        </button>
+      </div>
+      <div class="card--bounty-hunter">
+        <h2 class="card__title">The bounty hunter</h2>
+        <img class="card__image" src="./images/boba-fett.jpg" />
+        <p class="card__text">Targets</p>
+        <p class="card__text">Money</p>
+        <p class="card__text">Crime Lord</p>
+        <p class="card__text">CSS that has a bounty</p>
+        <button class="card__button--bounty-hunter">
+          See contracts for bounties
+        </button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
